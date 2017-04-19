@@ -74,18 +74,18 @@ include_once ("includes/config.php");
 //Tienen activa la cookie de aceptar cookies: cookieAlert3 = "1"
 if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 
-    //VIENE DE GOOGLE anuncios nuestros
-    if($_SESSION['pk_campaign'] == 'anunggl_antevenio' || $_SESSION['utm_campaign'] == 'anunggl_antevenio') {
+    //VIENE DE GOOGLE Grants
+    if($_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl') {
 ?>
 
-<!-- Google Code for Lead Navidad Conversion Page -->
+<!-- Google Code for pixel_firmas_grant Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
-var google_conversion_id = 872786314;
+var google_conversion_id = 973137582;
 var google_conversion_language = "en";
 var google_conversion_format = "3";
 var google_conversion_color = "ffffff";
-var google_conversion_label = "5_A3CLD6vWwQitOWoAM";
+var google_conversion_label = "lfA3CIPcvnAQrs2D0AM";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
@@ -93,10 +93,35 @@ var google_remarketing_only = false;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/872786314/?label=5_A3CLD6vWwQitOWoAM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/973137582/?label=lfA3CIPcvnAQrs2D0AM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
 
+<?php
+    }
+
+    //VIENE DE GOOGLE Display
+    if($_SESSION['pk_campaign'] == 'anunggl_display' || $_SESSION['utm_campaign'] == 'anunggl_display') {
+?>
+
+<!-- Google Code for Pixel_firmas Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 966452768;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "gEVDCNmMmWwQoMzrzAM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/966452768/?label=gEVDCNmMmWwQoMzrzAM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
 
 <?php
     }
