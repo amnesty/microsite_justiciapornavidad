@@ -101,7 +101,7 @@ var google_remarketing_only = false;
     }
 
     //VIENE DE GOOGLE Display
-    if($_SESSION['pk_campaign'] == 'anunggl_display' || $_SESSION['utm_campaign'] == 'anunggl_display') {
+    if($_SESSION['pk_campaign'] == 'anunggl_visual' || $_SESSION['utm_campaign'] == 'anunggl_visual') {
 ?>
 
 <!-- Google Code for Pixel_firmas Conversion Page -->
