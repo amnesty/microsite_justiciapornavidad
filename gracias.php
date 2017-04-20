@@ -69,6 +69,8 @@ include_once ("includes/config.php");
 	<!-- Tipografía Maven -->
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
 
+</head>
+<body>
 
 <?php
 //Tienen activa la cookie de aceptar cookies: cookieAlert3 = "1"
@@ -148,8 +150,6 @@ var google_remarketing_only = false;
     }
 }
 ?>
-</head>
-<body>
 
     <!-- Header -->
     <header class="interior">
