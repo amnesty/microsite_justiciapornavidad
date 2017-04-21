@@ -241,9 +241,11 @@ $(window).scroll(function(event) {
 	}
 
 	//CREAR COOKIE AL HACER SCROLL
-	if(!existeCookie('cookieAlert3')) {
-		crearCookie('cookieAlert3', '1', 365);
-	}
+    if(!existeCookie('cookieAlert3')) {
+        crearCookie('cookieAlert3', '1', 365, '.es.amnesty.org');
+        //crearCookie('cookieAlert3', '1', 365, '');
+    }
+
 
 });
 
@@ -267,16 +269,18 @@ function is_novideo( param ) {
     }
 }
 
-function crearCookie(name,value,days) {
-	console.log("--> Nombre: "+name+" Valor: "+value+" Dias: "+days);
-	if (days) {
-		var date = new Date();
-		date.setTime(date.getTime()+(days*24*60*60*1000));
-		var expires = "; expires="+date.toGMTString();
-	}
-	else var expires = "";
-	document.cookie = name+"="+value+expires+"; path=/";
+function crearCookie(name,value,days,domain) {
+    //console.log("--> Nombre: "+name+" Valor: "+value+" Dias: "+days);
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/; domain="+domain;
+    //document.cookie = name+"="+value+expires+"; path=/";
 }
+
 
 function existeCookie(name) {
 	var nameEQ = name + "=";
@@ -386,3 +390,4 @@ function ocultarTel(valor) {
 		$('input[name=telefono]').val('');
 	}
 }
+
