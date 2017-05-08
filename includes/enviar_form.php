@@ -90,7 +90,7 @@
 								`user_agent`)
 							VALUES (
 									NULL,
-									'justiciapornavidad',
+									'firma_por_navidad',
 									'".$nombre."',
 									'".$apellidos."',
 									'',
