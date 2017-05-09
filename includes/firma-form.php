@@ -25,19 +25,14 @@
             </div>
 
             <?php
+            
             $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo demanda. Establecido a 5000
-            $num_firmas = "";
-            $num_firmas_bd_bak = "83252"; //Numeros de firmas de la tabla backup
-            /*Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
-            Se puede hacer de diferentes formas:
-            Una consulta a BBDD (realizando una conexión previa) para saber el nº firmas que llevamos, Ejemplo SQL:
-            $num_firmas = SELECT COUNT("firma_ID") FROM "table_firmas";
-            */
+            $num_firmas = ""; // Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
+            $num_firmas_bd_bak = "154583"; // Numero de firmas de la tabla datos_firmas_backup (83252) + datos_firmas (71331). Pte incorporar a tabla firmas
 
             // contar de la tabla
-
             include_once('connect.php');
-  					$query =  "SELECT COUNT(*) AS contador FROM datos_firmas";
+  					$query =  "SELECT COUNT(*) AS contador FROM firmas where accion = 'justiciapornavidad'";
     				$result = mysqli_query( $id_connect, $query );
             $obj = mysqli_fetch_object($result);
             $num_firmas = $obj->contador;
