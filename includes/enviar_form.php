@@ -56,7 +56,7 @@
 					/*$query =  "INSERT INTO `amnistia`.`datos_firmas` (`nombre`,`apellidos`,`email`,`telefono`,`country_id`,`origen`,`politica`,`ip`,`socio`)
 						VALUES ('".$nombre."','".$apellidos."','".$email."','".$telefono."',".$pais.",'".$origen.":".$campanya."','".$politika."','".$ip."',".$socio.")";*/
 
-					$query = "INSERT INTO `firmas` (
+					$query = "INSERT INTO `". $tabla ."` (
 								`id`,
 								`accion`,
 								`nombre`,
@@ -125,10 +125,10 @@
   				$dummy = mysqli_query( $id_connect, $query ); // or die( showQueryIfDebugMode( $query, $id_connect ) );
 					mysqli_close($id_connect);
 
-					header("location: ../gracias.php?s=".$socio);
+					header("location: ../gracias/?s=".$socio);
 
 			} catch(Exception $e) {
-					header("location: ../gracias.php?error_form=1");
+					header("location: ../gracias/?error_form=1");
 			}
 	}
 	else {

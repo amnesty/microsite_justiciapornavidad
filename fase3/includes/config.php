@@ -12,9 +12,11 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/justicia/"); // Producción estrés
 } elseif ( $_SERVER['SERVER_NAME'] == "localhost" ) {
 	define("URL_SITE",     "http://localhost:8088/justicia/"); // Local amnistia
+	$tabla = 'test_firmas';
 } else {
 	//define("URL_SITE",     "http://justiciapornavidad.org/"); // Producción Amnistía
 	define("URL_SITE",     "http://www.es.amnesty.org/justicia/"); // Producción Amnistía
+	$tabla = 'firmas';
 }
 
 //Se usa para calcular el % de firmas para rellenar la "Progress Bar" en "/includes/firma-form.php"

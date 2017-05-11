@@ -1,10 +1,10 @@
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-AddOutputFilterByType DEFLATE image/x-icon 
-AddOutputFilterByType DEFLATE image/gif    
-AddOutputFilterByType DEFLATE image/png    
-AddOutputFilterByType DEFLATE image/jpeg 
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE image/gif
+AddOutputFilterByType DEFLATE image/png
+AddOutputFilterByType DEFLATE image/jpeg
 </ifmodule>
 # END GZIP
 
@@ -25,14 +25,14 @@ RewriteBase /justicia/
 
 
 
-#RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 #RewriteRule ^ /%1.html [R=302,L,NE]
 
 
 # BEGIN CASO TORRES
 # Add trailing slash
 RewriteCond %{REQUEST_URI} ^\/justicia\/torres$
-RewriteRule (.*) %{REQUEST_URI}/ [R=301,L] 
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 RewriteRule ^torres/$ fase3/index_torres.php
 RewriteRule ^torres/includes/enviar_form.php$ fase3/includes/enviar_form.php
 RewriteRule ^torres/([^/]+)$ fase3/$1.php?ref_orig=torres [QSA,L]
