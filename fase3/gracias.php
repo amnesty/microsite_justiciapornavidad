@@ -15,7 +15,7 @@ include_once ("includes/config.php");
     <meta name="description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
 	<link rel="canonical" href="<?php echo URL_SITE; ?>" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>images/compartir-tw-2.png" />
-    <link rel="icon" href="favicon.ico?v=3" type="image/x-icon" />
+    <link rel="icon" href="<?php echo URL_SITE; ?>fase3/favicon.ico?v=3" type="image/x-icon" />
     <meta name="pinterest-rich-pin" content="false" />
     <meta name="pinterest" content="nopin" />
     <!--Open Graph-->

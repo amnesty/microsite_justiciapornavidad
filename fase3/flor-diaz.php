@@ -9,7 +9,7 @@
     <meta name="description" content="Bebés como el hermano de Flor fueron apartados de sus familias y “desaparecieron”. Todo lo que desean es que vuelva la Justicia. Firma y ayúdales a conseguirlo.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>flor-diaz" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>images/COMPARTIR-TWT-FLOR.png" />
-    <link rel="icon" href="favicon.ico?v=3" type="image/x-icon" />
+    <link rel="icon" href="<?php echo URL_SITE; ?>fase3/favicon.ico?v=3" type="image/x-icon" />
     <meta name="pinterest-rich-pin" content="false" />
     <meta name="pinterest" content="nopin" />
     <!--Open Graph-->
