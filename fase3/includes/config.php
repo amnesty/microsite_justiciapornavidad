@@ -56,4 +56,14 @@ if(isset($_GET['utm_campaign'])) {
 
 //setcookie("cookieAlert3", 1, time() + 60*60*24*365, '/', '.es.amnesty.org');
 
+
+// FASE 3Trackeado de enlaces con UTM de Google Analytics
+define ("TRACK_FB_UTM_TORRES", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-torres");
+define ("TRACK_FB_UTM_ADANTI", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-adanti");
+define ("TRACK_FB_UTM_GALLEGO", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-gallego");
+
+//Sin uso
+define ("TRACK_TW_UTM", "?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-twitter");
+define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-whatsapp");
+
 ?>

@@ -55,5 +55,4 @@ if(isset($_GET['utm_campaign'])) {
 
 
 //setcookie("cookieAlert3", 1, time() + 60*60*24*365, '/', '.es.amnesty.org');
-
 ?>

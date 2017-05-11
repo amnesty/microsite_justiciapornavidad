@@ -107,7 +107,7 @@
 
                 <div class="text col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <h2>SIGUE LEYENDO PARA ENCONTRAR LO QUE ESTÁS BUSCANDO.</h2>
-                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de Maruja Torres, sino de algo que afecta a miles de familias en toda España.</p>
+                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Maruja Torres</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
 
                     <p>Familias que también hoy recordarán a sus seres queridos, aquellos que desaparecieron durante la guerra civil y el franquismo y por quienes aún exigen justicia.</p>
 
@@ -121,13 +121,13 @@
 
         <div class="rrss">
             <ul class="clearfix">
-                <li><a data-shareurl="<?php echo URL_SITE . 'torres/' . TRACK_FB_UTM; ?>" data-title="El secreto a voces de Maruja Torres" data-texto="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas" data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-torres.png" data-caption="El secreto a voces de Maruja Torres" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
-                <li><a data-shareurl="<?php echo urlencode('https://goo.gl/E8hXwz') ; ?>" data-texto="El secreto a voces de Maruja Torres" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
+                <li><a data-shareurl="<?php echo URL_SITE . 'torres/' . TRACK_FB_UTM_TORRES; ?>" data-title="El secreto a voces de Maruja Torres" data-texto="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas" data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-torres.png" data-caption="El secreto a voces de Maruja Torres" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                <li><a data-shareurl="<?php echo urlencode('https://goo.gl/afpIJT') ; ?>" data-texto="Lo de la familia de @mistralS me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
 <?php
     if($isMobile) {
 
 ?>
-                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El secreto a voces de Maruja Torres https://goo.gl/ufL2RR')?>"></a></li>
+                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Maruja Torres me ha sorprendido #DiaDeLaFamilia  https://goo.gl/n7uBDC')?>"></a></li>
 <?php
 }
 ?>
