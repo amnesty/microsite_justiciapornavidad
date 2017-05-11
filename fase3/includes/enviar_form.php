@@ -1,53 +1,12 @@
 <?php
 
-//print_r($_POST);
-
-function callApi($url, $method) {
-		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_HTTPGET, 1);
-		$result = curl_exec($ch);
-		curl_close($ch);
-		return $result;
-}
-
-function es_interesado($email) {
-		// Params
-	  $login = 'ccapote_amnistia_api';
-	  $password = 'p@ssw0rd';
-	  $api_key = 'CdX7ColF7lCfnlRYb8MitZOUbBUrc_yDowKsBtdPO6SgbxDNgpGZWBsHMdTHySM';
-	  $url_base = 'https://p4apic.emv2.com/apimember/services/rest/';
-
-	  // Conexion
-	  $url_conexion = $url_base.'connect/open/'.$login.'/'.$password.'/'.$api_key;
-	  $token = callApi($url_conexion, "GET");
-	  $xml_token = new SimpleXMLElement($token);
-	  $token = $xml_token->result;
-
-	  // Consulta por mail
-	  $url_mail = $url_base.'member/getMemberByEmail/'.$token.'/'.$email;
-	  $result = callApi($url_mail, "GET");
-	  $xml = new SimpleXMLElement($result);
-
-	  $status=2;
-	  if(!empty($xml->members->member)){
-				$pvkey="";
-	      foreach($xml->members->member->attributes->entry as $entry) {
-	        if($entry->key=='AI_PVKEY'){
-	            $pvkey = $entry->value;
-	        }
-	      }
-	      $status = (($pvkey > 0 && $pvkey != '')?1:0);
-	  }
-	  // Cerrar conexion
-	  $url_close = $url_base.'connect/close/'.$token;
-	  callApi($url_close, "GET");
-		return $status;
-}
-
 if($_POST['guardar_form']) {
+
+			// BD
+			include_once('connect.php');
+
+			// API
+			include_once('api.php');
 
 			extract($_POST);
 
