@@ -125,10 +125,10 @@
   				$dummy = mysqli_query( $id_connect, $query ); // or die( showQueryIfDebugMode( $query, $id_connect ) );
 					mysqli_close($id_connect);
 
-					header("location: ../gracias.php/?s=".$socio);
+					header("location: ../gracias.php?s=".$socio);
 
 			} catch(Exception $e) {
-					header("location: ../gracias.php/?error_form=1");
+					header("location: ../gracias.php?error_form=1");
 			}
 	}
 	else {
