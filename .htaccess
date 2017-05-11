@@ -34,10 +34,32 @@ RewriteCond %{REQUEST_URI} ^\/justicia\/torres$
 RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 RewriteRule ^torres/$ fase3/index_torres.php
 RewriteRule ^torres/includes/enviar_form.php$ fase3/includes/enviar_form.php
-RewriteRule ^torres/gracias.php$ fase3/gracias.php
+RewriteRule ^torres/gracias.php$ fase3/gracias.php?ref_orig=torres [QSA,L]
 RewriteRule ^torres/([^/]+)$ fase3/$1.php?ref_orig=torres [QSA,L]
 
 # END CASO TORRES
+
+# BEGIN CASO ADANTI
+# Add trailing slash
+RewriteCond %{REQUEST_URI} ^\/justicia\/adanti$
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+RewriteRule ^adanti/$ fase3/index_adanti.php
+RewriteRule ^adanti/includes/enviar_form.php$ fase3/includes/enviar_form.php
+RewriteRule ^adanti/gracias.php$ fase3/gracias.php?ref_orig=adanti [QSA,L]
+RewriteRule ^adanti/([^/]+)$ fase3/$1.php?ref_orig=adanti [QSA,L]
+
+# END CASO ADANTI
+
+# BEGIN CASO GALLEGO
+# Add trailing slash
+RewriteCond %{REQUEST_URI} ^\/justicia\/gallego$
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+RewriteRule ^gallego/$ fase3/index_gallego.php
+RewriteRule ^gallego/includes/enviar_form.php$ fase3/includes/enviar_form.php
+RewriteRule ^gallego/gracias.php$ fase3/gracias.php?ref_orig=gallego [QSA,L]
+RewriteRule ^gallego/([^/]+)$ fase3/$1.php?ref_orig=gallego [QSA,L]
+
+# END CASO GALLEGO
 
 
 

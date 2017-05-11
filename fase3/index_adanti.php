@@ -5,31 +5,31 @@
 	<meta charset="UTF-8">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-	<title>El secreto a voces de Maruja Torres</title>
-    <meta name="description" content="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas.">
-	<link rel="canonical" href="<?php echo URL_SITE; ?>torres/" />
-    <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-torres.jpg" />
+	<title>¡Darío Adanti, pillado!</title>
+    <meta name="description" content="El dibujante de Mongolia esconde este secreto familiar.">
+	<link rel="canonical" href="<?php echo URL_SITE; ?>adanti/" />
+    <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-adanti.jpg" />
     <link rel="icon" href="<?php echo URL_SITE; ?>fase3/favicon.ico?v=3" type="image/x-icon" />
     <meta name="pinterest-rich-pin" content="false" />
     <meta name="pinterest" content="nopin" />
     <!--Open Graph-->
-    <meta property="og:url" content="<?php echo URL_SITE; ?>torres/" />
+    <meta property="og:url" content="<?php echo URL_SITE; ?>adanti/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:title" content="El secreto a voces de Maruja Torres" />
-    <meta property="og:description" content="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas." />
+    <meta property="og:title" content="¡Darío Adanti, pillado!" />
+    <meta property="og:description" content="El dibujante de Mongolia esconde este secreto familiar." />
     <meta property="og:site_name" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-torres.jpg" />
+    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-adanti.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <!--Twitter Cardas-->
-    <meta name="twitter:url" content="<?php echo URL_SITE; ?>torres/" />
+    <meta name="twitter:url" content="<?php echo URL_SITE; ?>adanti/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
-    <meta name="twitter:title" content="El secreto a voces de Maruja Torres" />
-    <meta name="twitter:description" content="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas." />
-    <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-torres.jpg" />
+    <meta name="twitter:title" content="¡Darío Adanti, pillado!" />
+    <meta name="twitter:description" content="El dibujante de Mongolia esconde este secreto familiar." />
+    <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-adanti.jpg" />
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
@@ -107,7 +107,7 @@
 
                 <div class="text col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <h2>SIGUE LEYENDO PARA ENCONTRAR LO QUE ESTÁS BUSCANDO.</h2>
-                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Maruja Torres</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
+                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Darío Andati</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
 
                     <p>Familias que también hoy recordarán a sus seres queridos, aquellos que desaparecieron durante la guerra civil y el franquismo y por quienes aún exigen justicia.</p>
 
@@ -121,13 +121,13 @@
 
         <div class="rrss">
             <ul class="clearfix">
-                <li><a data-shareurl="<?php echo URL_SITE . 'torres/' . TRACK_FB_UTM_TORRES; ?>" data-title="El secreto a voces de Maruja Torres" data-texto="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-torres.jpg" data-caption="El secreto a voces de Maruja Torres" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
-                <li><a data-shareurl="<?php echo urlencode('https://goo.gl/afpIJT') ; ?>" data-texto="Lo de la familia de @mistralS me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
+                <li><a data-shareurl="<?php echo URL_SITE . 'adanti/' . TRACK_FB_UTM_ADANTI; ?>" data-title="¡Darío Adanti, pillado!" data-texto="El dibujante de Mongolia esconde este secreto familiar." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-adanti.jpg" data-caption="¡Darío Adanti, pillado!" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                <li><a data-shareurl="<?php echo urlencode('https://goo.gl/f5CG6W') ; ?>" data-texto="Lo de la familia de @darioadanti me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
 <?php
     if($isMobile) {
 
 ?>
-                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Maruja Torres me ha sorprendido #DiaDeLaFamilia https://goo.gl/n7uBDC')?>"></a></li>
+                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Darío Adanti me ha sorprendido #DiaDeLaFamilia https://goo.gl/83ldaA')?>"></a></li>
 <?php
 }
 ?>

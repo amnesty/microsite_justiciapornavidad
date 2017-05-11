@@ -18,7 +18,7 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	$tabla = 'test_firmas';
 } else {
 	//define("URL_SITE",     "http://justiciapornavidad.org/"); // Producción Amnistía
-	define("URL_SITE",     "http://www.es.amnesty.org/justicia/"); // Producción Amnistía
+	define("URL_SITE",     "https://www.es.amnesty.org/justicia/"); // Producción Amnistía
 	$tabla = 'firmas';
 }
 
