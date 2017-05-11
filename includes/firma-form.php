@@ -34,7 +34,6 @@
 
             // contar de la tabla
             include_once('connect.php');
-            include_once('config.php');
   					$query =  "SELECT COUNT(*) AS contador FROM $tabla where accion = 'justiciapornavidad'";
     				$result = mysqli_query( $id_connect, $query );
             $obj = mysqli_fetch_object($result);
