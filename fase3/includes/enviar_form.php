@@ -58,7 +58,7 @@
 					/*$query =  "INSERT INTO `amnistia`.`datos_firmas` (`nombre`,`apellidos`,`email`,`telefono`,`country_id`,`origen`,`politica`,`ip`,`socio`)
 						VALUES ('".$nombre."','".$apellidos."','".$email."','".$telefono."',".$pais.",'".$origen.":".$campanya."','".$politika."','".$ip."',".$socio.")";*/
 
-					$query = "INSERT INTO `. $tabla .` (
+					$query = "INSERT INTO `". $tabla ."` (
 								`id`,
 								`accion`,
 								`nombre`,
