@@ -15,14 +15,13 @@ php_value default_charset UTF-8
 
 
 # Server Local estrés
-RewriteBase /justicia/
+#RewriteBase /justicia/
 
 # Testing Estresarte
 #RewriteBase /amnistia/justicia/
 
 #Servidor Amnisita
-#RewriteBase /justicia/
-
+RewriteBase /justicia/
 
 
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
@@ -35,6 +34,7 @@ RewriteCond %{REQUEST_URI} ^\/justicia\/torres$
 RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 RewriteRule ^torres/$ fase3/index_torres.php
 RewriteRule ^torres/includes/enviar_form.php$ fase3/includes/enviar_form.php
+RewriteRule ^torres/gracias.php$ fase3/gracias.php
 RewriteRule ^torres/([^/]+)$ fase3/$1.php?ref_orig=torres [QSA,L]
 
 # END CASO TORRES
