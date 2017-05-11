@@ -1,0 +1,45 @@
+<?php
+
+if($_POST['guardar_form']) {
+
+	extract($_POST);
+
+	$nombre = $_POST['nombre'];
+	$apellidos = $_POST['apellidos'];
+	$email = $_POST['email'];
+	$telefono = $_POST['telefono'];
+	$pais = $_POST['pais'];
+
+	//URL REAL
+	//$url = 'https://crm.es.amnesty.org/sites/all/modules/civicrm/extern/rest.php?entity=Contact&action=create&api_key=dd5928796f22798dfc0631f33ed163c5&key=e25b6bfd79eb165e74f09ca5a69a25be&json={"sequential":1,"contact_type":"Individual","first_name":"'.$nombre.'","api.Email.create":{"email":"'.$email.'"},"api.Phone.create":{"phone":"'.$telefono.'"},"api.Address.create":{"country_id":"'.$pais.'","location_type_id":"1"},"last_name":"'.$apellidos.'","source":"justiciapornavidad"}';
+	
+	//URL PRUEBAS
+	$url = 'https://pruebacrm.es.amnesty.org/sites/all/modules/civicrm/extern/rest.php?entity=Contact&action=create&api_key=dd5928796f22798dfc0631f33ed163c5&key=e25b6bfd79eb165e74f09ca5a69a25be&json={"sequential":1,"contact_type":"Individual","first_name":"'.$nombre.'","api.Email.create":{"email":"'.$email.'"},"api.Phone.create":{"phone":"'.$telefono.'"},"api.Address.create":{"country_id":"'.$pais.'","location_type_id":"1"},"last_name":"'.$apellidos.'","source":"justiciapornavidad"}';
+	
+
+	$ch = curl_init();
+	    
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_HEADER, false);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, "");
+
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
+	$resultado = curl_exec ($ch);
+	$resultado = json_decode($resultado);
+
+	curl_close($ch);
+
+	if($resultado->is_error == 0) {
+		//TODO OK
+		header("location: ../gracias");
+	}else {
+		//ALGÚN ERROR
+		header("location: ../gracias?error_form=1");
+		//print_r($resultado);
+	}
+
+	//print_r($resultado);
+}
+
+?>
