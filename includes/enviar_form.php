@@ -2,6 +2,8 @@
 
 	if( isset($_POST) && $_POST['guardar_form'] ) {
 
+			// Config
+			include_once('config.php');
 			// BD
 			include_once('connect.php');
 			// API
