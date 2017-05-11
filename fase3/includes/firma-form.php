@@ -32,7 +32,7 @@
 
             // contar de la tabla
             include_once('connect.php');
-  					$query =  "SELECT COUNT(*) AS contador FROM firmas where accion = 'justiciapornavidad'";
+  					$query =  "SELECT COUNT(*) AS contador FROM $table where accion = 'justiciapornavidad'";
     				$result = mysqli_query( $id_connect, $query );
             $obj = mysqli_fetch_object($result);
             $num_firmas = $obj->contador;
