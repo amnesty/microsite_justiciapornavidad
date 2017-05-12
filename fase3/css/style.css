@@ -1,11 +1,11 @@
 /*SELECCION WEB*/
 ::-moz-selection {
-  background: #fdd835
+  background: #fdd835;
   color: #111010;
   text-shadow: none;
 }
 ::selection {
-  background: #fdd835
+  background: #fdd835;
   color: #111010;
   text-shadow: none;
 }
