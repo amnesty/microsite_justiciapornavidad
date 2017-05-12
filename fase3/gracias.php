@@ -70,7 +70,7 @@ include_once ("includes/config.php");
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
 <? elseif  ( $_GET['ref_orig'] == 'gallego' ): ?>
-<title>Javier Gallego al descubierto</title>
+    <title>Javier Gallego al descubierto</title>
     <meta name="description" content="Te contamos el secreto de familia que no quieren que sepas.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>gallego/" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
@@ -92,7 +92,7 @@ include_once ("includes/config.php");
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
-    <meta name="twitter:title" content="El secreto a voces de Maruja gallego" />
+    <meta name="twitter:title" content="Javier Gallego al descubierto" />
     <meta name="twitter:description" content="Te contamos el secreto de familia que no quieren que sepas." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
     <meta name="twitter:image:width" content="1024" />

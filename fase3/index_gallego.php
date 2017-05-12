@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
-    <meta name="twitter:title" content="El secreto a voces de Maruja gallego" />
+    <meta name="twitter:title" content="Javier Gallego al descubierto" />
     <meta name="twitter:description" content="Te contamos el secreto de familia que no quieren que sepas." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
     <meta name="twitter:image:width" content="1024" />
