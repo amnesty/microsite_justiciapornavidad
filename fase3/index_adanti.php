@@ -107,7 +107,7 @@
 
                 <div class="text col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <h2>SIGUE LEYENDO PARA ENCONTRAR LO QUE ESTÁS BUSCANDO.</h2>
-                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Darío Andati</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
+                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Darío Adanti</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
 
                     <p>Familias que también hoy recordarán a sus seres queridos, aquellos que desaparecieron durante la guerra civil y el franquismo y por quienes aún exigen justicia.</p>
 
