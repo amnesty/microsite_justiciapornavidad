@@ -84,7 +84,7 @@ include_once ("includes/config.php");
     <meta property="og:title" content="Javier Gallego al descubierto" />
     <meta property="og:description" content="Te contamos el secreto de familia que no quieren que sepas." />
     <meta property="og:site_name" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego.jpg" />
+    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <!--Twitter Cardas-->
@@ -317,7 +317,7 @@ if($_GET['error_form'] == 1){
                     <!--Redes Gallego-->
                     <div class="rrss">
                         <ul class="clearfix">
-                            <li><a data-shareurl="<?php echo URL_SITE . 'gallego/' . TRACK_FB_UTM_GALLEGO; ?>" data-title="Javier Gallego al descubierto" data-texto="Te contamos el secreto de familia que no quieren que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego.jpg" data-caption="Javier Gallego al descubierto" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                            <li><a data-shareurl="<?php echo URL_SITE . 'gallego/' . TRACK_FB_UTM_GALLEGO; ?>" data-title="Javier Gallego al descubierto" data-texto="Te contamos el secreto de familia que no quieren que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="Javier Gallego al descubierto" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
                             <li><a data-shareurl="<?php echo urlencode('https://goo.gl/yo5g9J') ; ?>" data-texto="Lo de la familia de @carnecrudaradio me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
             <?php
                 if($isMobile) {
