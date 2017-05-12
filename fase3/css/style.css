@@ -816,6 +816,37 @@ form.formulario-firma.row{
     color: #ffffff;
 }
 
+.gracias-firma .rrss ul{
+	padding: 0;
+	margin: auto;
+	display: table;
+}
+
+.gracias-firma .rrss ul li{
+	float: left;
+	margin: auto;
+	display: table-cell;
+	margin-right: 10px;
+}
+
+.gracias-firma .rrss ul li:last-child{
+	margin-right: 0;
+}
+
+.gracias-firma .rrss ul li a{
+	color: #111010;
+    font-size: 30px;
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+}
+
+.gracias-firma .rrss ul li a:hover {
+    color: #111010;
+}
+
+
 
 /* Módulo historias */
 .historias-bg{

@@ -119,7 +119,7 @@
 
         </div><!-- /container -->
 
-        <div class="rrss">
+        <div class="rrss" style="display:none;">
             <ul class="clearfix">
                 <li><a data-shareurl="<?php echo URL_SITE . 'torres/' . TRACK_FB_UTM_TORRES; ?>" data-title="El secreto a voces de Maruja Torres" data-texto="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-torres.jpg" data-caption="El secreto a voces de Maruja Torres" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
                 <li><a data-shareurl="<?php echo urlencode('https://goo.gl/afpIJT') ; ?>" data-texto="Lo de la familia de @mistralS me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>

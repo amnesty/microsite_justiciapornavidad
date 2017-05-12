@@ -119,7 +119,7 @@
 
         </div><!-- /container -->
 
-        <div class="rrss">
+        <div class="rrss" style="display:none;">
             <ul class="clearfix">
                 <li><a data-shareurl="<?php echo URL_SITE . 'adanti/' . TRACK_FB_UTM_ADANTI; ?>" data-title="¡Darío Adanti, pillado!" data-texto="El dibujante de Mongolia esconde este secreto familiar." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-adanti.jpg" data-caption="¡Darío Adanti, pillado!" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
                 <li><a data-shareurl="<?php echo urlencode('https://goo.gl/f5CG6W') ; ?>" data-texto="Lo de la familia de @darioadanti me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
