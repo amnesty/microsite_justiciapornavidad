@@ -1,6 +1,6 @@
 <?php
 
-	if( isset($_POST) && $_POST['guardar_form'] ) {
+	if( $_POST['guardar_form'] ) {
 
 			// Config
 			include_once('config.php');
@@ -40,11 +40,14 @@
 			try {
 
 					// País
+					//$query_pais = "SELECT nombre FROM paises WHERE id_mp=".$pais_id;
 					$query_pais = "SELECT ISO_Country_es AS nombre, IdWeb AS siglas FROM correos.countries WHERE IdMailSolutions=".$pais_id;
 					$result = mysqli_query( $id_connect, $query_pais ); //or die( 'Error: ' . mysqli_connect_errno() );
 					$pais = $result->fetch_array(MYSQLI_ASSOC);
 					$pais_nombre = $pais["nombre"];
 					$pais_siglas = $pais["siglas"];
+
+					//var_dump($pais);
 
 					//nuev@s interesad@s
 					$socio = es_interesado($email);
@@ -59,7 +62,7 @@
 					/*$query =  "INSERT INTO `amnistia`.`datos_firmas` (`nombre`,`apellidos`,`email`,`telefono`,`country_id`,`origen`,`politica`,`ip`,`socio`)
 						VALUES ('".$nombre."','".$apellidos."','".$email."','".$telefono."',".$pais.",'".$origen.":".$campanya."','".$politika."','".$ip."',".$socio.")";*/
 
-					$query = "INSERT INTO `". $tabla ."` (
+						$query = "INSERT INTO `".$tabla."` (
 								`id`,
 								`accion`,
 								`nombre`,
@@ -117,7 +120,7 @@
 									'0',
 									'0',
 									CURRENT_TIMESTAMP,
-									".$pais_siglas.",
+									'".$pais_siglas."',
 									NULL,
 									'0',
 									'0',
@@ -125,7 +128,7 @@
 									'".$user_agent."'
 								)";
 
-  				$dummy = mysqli_query( $id_connect, $query ); // or die( showQueryIfDebugMode( $query, $id_connect ) );
+  				$dummy = mysqli_query( $id_connect, $query ) or die( "error!" );
 					mysqli_close($id_connect);
 
 					header("location: ../gracias.php?s=".$socio);

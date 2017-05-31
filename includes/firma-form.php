@@ -33,7 +33,10 @@
               $num_firmas_bd_bak = 0;
 
             // contar de la tabla
+            include_once('config.php');
+
             include_once('connect.php');
+
   					$query =  "SELECT COUNT(*) AS contador FROM $tabla where accion = 'justiciapornavidad'";
     				$result = mysqli_query( $id_connect, $query );
             $obj = mysqli_fetch_object($result);
