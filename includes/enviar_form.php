@@ -40,10 +40,11 @@
 			try {
 
 					// País
-					$query_pais = "SELECT nombre FROM paises WHERE id_mp=".$pais_id;
+					$query_pais = "SELECT ISO_Country_es AS nombre, IdWeb AS siglas FROM correos.countries WHERE IdMailSolutions=".$pais_id;
 					$result = mysqli_query( $id_connect, $query_pais ); //or die( 'Error: ' . mysqli_connect_errno() );
 					$pais = $result->fetch_array(MYSQLI_ASSOC);
-					$pais_def = $pais["nombre"];
+					$pais_nombre = $pais["nombre"];
+					$pais_siglas = $pais["siglas"];
 
 					//nuev@s interesad@s
 					$socio = es_interesado($email);
@@ -99,7 +100,7 @@
 									'',
 									'',
 									'',
-									'".$pais_def."',
+									'".$pais_nombre."',
 									'".$email."',
 									'".$telefono."',
 									'',
@@ -116,7 +117,7 @@
 									'0',
 									'0',
 									CURRENT_TIMESTAMP,
-									".$pais_id.",
+									".$pais_siglas.",
 									NULL,
 									'0',
 									'0',
