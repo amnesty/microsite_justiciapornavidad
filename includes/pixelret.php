@@ -57,5 +57,5 @@ var google_remarketing_only = true;
 	<!-- End Twitter single-event website tag code -->
 <?php
 	}
-    }
+}
 ?>
