@@ -1,17 +1,16 @@
 <?php
-ini_set('display_errors', 0);
-error_reporting(0);
-
-include_once ("includes/config.php");
-
+	ini_set('display_errors', 0);
+	error_reporting(0);
+	include_once ("includes/config.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-<? if  ( $_GET['ref_orig'] == 'torres' ): ?>
+<?php if  ( $_GET['ref_orig'] == 'torres' ){ ?>
 	<title>El secreto a voces de Maruja Torres</title>
     <meta name="description" content="La escritora ganadora del Premio Planeta tiene un secreto familiar que no quiere que sepas.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>torres/" />
@@ -40,7 +39,7 @@ include_once ("includes/config.php");
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-<? elseif  ( $_GET['ref_orig'] == 'adanti' ): ?>
+<?php } elseif  ( $_GET['ref_orig'] == 'adanti' ){ ?>
     <title>¡Darío Adanti, pillado!</title>
     <meta name="description" content="El dibujante de Mongolia esconde este secreto familiar.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>adanti/" />
@@ -69,7 +68,7 @@ include_once ("includes/config.php");
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-<? elseif  ( $_GET['ref_orig'] == 'gallego' ): ?>
+<?php } elseif  ( $_GET['ref_orig'] == 'gallego' ){ ?>
     <title>Javier Gallego al descubierto</title>
     <meta name="description" content="Te contamos el secreto de familia que no quieren que sepas.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>gallego/" />
@@ -98,8 +97,8 @@ include_once ("includes/config.php");
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-<? else: ?> 
-<!--Default-->    
+<?php } else { ?>
+<!--Default-->
     <title>Seguimos pidiendo Justicia – Amnistía Internacional</title>
     <meta name="description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
     <link rel="canonical" href="<?php echo URL_SITE; ?>" />
@@ -128,8 +127,8 @@ include_once ("includes/config.php");
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-    <!--.Default-->    
-<? endif; ?>
+    <!--.Default-->
+<?php } ?>
 
 
     <!--.Open Graph-->
@@ -166,96 +165,8 @@ include_once ("includes/config.php");
 <body>
 
 <?php
-//Tienen activa la cookie de aceptar cookies: cookieAlert3 = "1"
-if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
-
-    //VIENE DE GOOGLE Grants
-    if($_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl') {
-?>
-
-<!-- Google Code for pixel_firmas_grant Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 973137582;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lfA3CIPcvnAQrs2D0AM";
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/973137582/?label=lfA3CIPcvnAQrs2D0AM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-<?php
-    }
-
-    //VIENE DE GOOGLE Display
-    if($_SESSION['pk_campaign'] == 'anunggl_visual' || $_SESSION['utm_campaign'] == 'anunggl_visual') {
-?>
-
-<!-- Google Code for Pixel_firmas Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 966452768;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "gEVDCNmMmWwQoMzrzAM";
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/966452768/?label=gEVDCNmMmWwQoMzrzAM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-<?php
-    }
-
-    //VIENE DE FACEBOOK
-    if($_SESSION['pk_campaign'] == 'anunfbk' || $_SESSION['utm_campaign'] == 'anunfbk' || $_SESSION['utm_source'] == 'FBPAGE' || $_SESSION['utm_source'] == 'fbpage') {
-?>
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1076898019072470');
-    fbq('track', "PageView");
-    fbq('track', 'Lead');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1076898019072470&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-<?php
-    }
-
-    //VIENE DE TWITER
-    if($_SESSION['pk_campaign'] == 'anuntwtt ' || $_SESSION['utm_campaign'] == 'anuntwtt ' || $_SESSION['utm_source'] == 'anuntwtt ' || $_SESSION['utm_source'] == 'anuntwtt ') {
-?>
-    <!-- Twitter single-event website tag code -->
-    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
-    <script type="text/javascript">twttr.conversion.trackPid('nxiya', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
-    <noscript>
-    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nxiya&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nxiya&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-    </noscript>
-    <!-- End Twitter single-event website tag code -->
-<?php
-    }
-}
+	// Pixels de retargetting de FB, Google, Twitter,...
+	include_once("../includes/pixelretgracias.php");
 ?>
 
     <!-- Header -->
@@ -270,29 +181,25 @@ var google_remarketing_only = false;
     </header>
 
 
-
     <!-- Módulo Firma -->
     <div class="modulo-firma gracias-firma">
         <div class="gracias">
-<?php
-if($_GET['error_form'] == 1){
-?>
+
+<?php if($_GET['error_form'] == 1) { ?>
                 <div class="box-text">
                     <h4>¡Error!</h4>
                     <p>Lo sentimos, se ha producido un error al guardar tus datos. Por favor, inténtalo más tarde.</p>
                     <p><a href="<?php echo URL_SITE; ?><?=$_GET['ref_orig']?>/" title="Volver a la campaña" class="">Volver</a></p>
                 </div>
 
-<?php
-} else {
-?>
+<?php } else { ?>
                 <div class="box-text">
                     <h4>¡Muchas gracias!</h4>
                     <p>Por hacer realidad un deseo que lleva demasiados años sin cumplirse: <b>el deseo de justicia.</b></p>
                     <p>Compártelo entre tus contactos</b></p>
                 <!--</div>-->
 
-<? if  ( $_GET['ref_orig'] == 'torres' ): ?>
+<?php if  ( $_GET['ref_orig'] == 'torres' ){ ?>
                     <!--Redes Torres-->
                     <div class="rrss">
                         <ul class="clearfix">
@@ -302,14 +209,14 @@ if($_GET['error_form'] == 1){
                 if($isMobile) {
 
             ?>
-                            <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Maruja Torres me ha sorprendido #DiaDeLaFamilia https://goo.gl/n7uBDC')?>"></a></li>
+                          <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Maruja Torres me ha sorprendido #DiaDeLaFamilia https://goo.gl/n7uBDC')?>"></a></li>
             <?php
-            }
+            		}
             ?>
                         </ul>
-                    </div>                
+                    </div>
 
-<? elseif  ( $_GET['ref_orig'] == 'adanti' ): ?>  
+<?php } elseif  ( $_GET['ref_orig'] == 'adanti' ){ ?>
                     <!--Redes Adanti-->
                     <div class="rrss">
                         <ul class="clearfix">
@@ -324,10 +231,10 @@ if($_GET['error_form'] == 1){
             }
             ?>
                         </ul>
-                    </div>                
+                    </div>
 
 
-<? elseif  ( $_GET['ref_orig'] == 'gallego' ): ?>                    
+<?php } elseif  ( $_GET['ref_orig'] == 'gallego' ){ ?>
                     <!--Redes Gallego-->
                     <div class="rrss">
                         <ul class="clearfix">
@@ -342,9 +249,9 @@ if($_GET['error_form'] == 1){
             }
             ?>
                         </ul>
-                    </div>                
+                    </div>
 
-<? else: ?> 
+<?php } else { ?>
                     <!--Redes Default-->
                     <div class="rrss">
                         <ul class="clearfix">
@@ -360,7 +267,7 @@ if($_GET['error_form'] == 1){
             ?>
                         </ul>
                     </div>
-<? endif; ?>
+<?php } ?>
                 </div><!--.box-text-->
 
 
@@ -418,9 +325,6 @@ if($_GET['error_form'] == 1){
 <noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
-
-    <!-- pixel google  -->
-    <?php include ("includes/pixelret.php"); ?>
 
 </body>
 </html>

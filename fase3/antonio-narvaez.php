@@ -127,7 +127,7 @@
 
 
     <!-- pixel google  -->
-    <?php include ("includes/pixelret.php"); ?>
+    <?php include ("../includes/pixelret.php"); ?>
 
 </body>
 </html>

@@ -43,7 +43,7 @@ var google_remarketing_only = true;
 </noscript>
 <?php
 //VIENE DE TWITTER
-	if(isset($_SESSION['pk_campaign']) && $_SESSION['pk_campaign'] == 'anuntwtt ' || isset($_SESSION['utm_campaign']) && $_SESSION['utm_campaign'] == 'anuntwtt ') {
+	if(isset($_SESSION['pk_campaign']) && $_SESSION['pk_campaign'] == 'anuntwtt' || isset($_SESSION['utm_campaign']) && $_SESSION['utm_campaign'] == 'anuntwtt') {
 ?>
 	<!-- Twitter single-event website tag code -->
 	<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
