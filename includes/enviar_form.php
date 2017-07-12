@@ -128,7 +128,7 @@
 									'".$user_agent."'
 								)";
 
-  				$dummy = mysqli_query( $id_connect, $query ) or die( "error!" );
+  				$dummy = mysqli_query( $id_connect, $query ); //or die( "error!" );
 					mysqli_close($id_connect);
 
 					header("location: ../gracias.php?s=".$socio);
