@@ -119,7 +119,7 @@
 		<div class="container">
             <div class="box-text row center middle">
                 <div class="col-12">
-                    <h2>Seguimos pidiendo<br/>que vuelva la justicia</h2>
+                    <h2>Nada es igual<br/>si alguien desaparece</h2>
                     <p>Firma y pide justicia para Flor, Antonio, Felisa y miles de víctimas de la guerra civil y el franquismo.</p>
 
                     <!--<a id="myplay" class="hvr-grow" href="#" title="play" data-toggle="modal" data-target="#videoModal"><img src="images/play-button.png" alt="play"></a>-->
