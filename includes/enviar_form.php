@@ -7,7 +7,7 @@
 			// BD
 			include_once('connect.php');
 			// API
-			include_once('api.php');
+			include_once('api2.php');
 
 			extract($_POST);
 
@@ -47,90 +47,117 @@
 					$pais_nombre = $pais["nombre"];
 					$pais_siglas = $pais["siglas"];
 
-					//var_dump($pais);
+					// Ver si existe en la BD
+					$query_existe = "SELECT * FROM `".$tabla."` WHERE email='".$email."' AND accion='justiciapornavidad'";
+					$result = mysqli_query( $id_connect, $query_existe ); //or die( 'Error: ' . mysqli_connect_errno() );
+					$existe = $result->fetch_array(MYSQLI_ASSOC);
 
 					//nuev@s interesad@s
 					$socio = es_interesado($email);
 
-					// fichero texto
-					/*$now = date("Y-m-d h:i:sa");
-					$txt = $nombre."\t".$apellidos."\t".$email."\t".$telefono."\t".$pais."\t".$politika."\t".$origen.":".$campanya."\t".$ip."\t".$socio."\t".$now."\n";
-  				$myfile = fopen("file.txt", "a");
-  				fwrite($myfile, $txt);
-  				fclose($myfile);*/
+					if(!isset($existe)) {
 
-					/*$query =  "INSERT INTO `amnistia`.`datos_firmas` (`nombre`,`apellidos`,`email`,`telefono`,`country_id`,`origen`,`politica`,`ip`,`socio`)
-						VALUES ('".$nombre."','".$apellidos."','".$email."','".$telefono."',".$pais.",'".$origen.":".$campanya."','".$politika."','".$ip."',".$socio.")";*/
+							// fichero texto
+							/*$now = date("Y-m-d h:i:sa");
+							$txt = $nombre."\t".$apellidos."\t".$email."\t".$telefono."\t".$pais."\t".$politika."\t".$origen.":".$campanya."\t".$ip."\t".$socio."\t".$now."\n";
+		  				$myfile = fopen("file.txt", "a");
+		  				fwrite($myfile, $txt);
+		  				fclose($myfile);*/
 
-						$query = "INSERT INTO `".$tabla."` (
-								`id`,
-								`accion`,
-								`nombre`,
-								`apellidos`,
-								`apellido2`,
-								`dni`,
-								`poblacion`,
-								`provincia`,
-								`pais`,
-								`email`,
-								`telefono`,
-								`nif`,
-								`masinfo`,
-								`masinfoval`,
-								`rau`,
-								`rauval`,
-								`socio`,
-								`fecha`,
-								`accion2`,
-								`ip`,
-								`origen`,
-								`origen_piwik`,
-								`fax_enviado`,
-								`en_ev`,
-								`en_ev_firma`,
-								`pais_id`,
-								`provincia_id`,
-								`version_movil`,
-								`datos_firma_rapida`,
-								`mensaje`,
-								`user_agent`)
-							VALUES (
-									NULL,
-									'justiciapornavidad',
-									'".$nombre."',
-									'".$apellidos."',
-									'',
-									'',
-									'',
-									'',
-									'".$pais_nombre."',
-									'".$email."',
-									'".$telefono."',
-									'',
-									".$masinfo.",
-									'0',
-									'0',
-									'0',
-									".$socio.",
-									CURRENT_TIMESTAMP,
-									'',
-									'".$ip."',
-									'".$origen.":".$campanya."',
-									'".$origen.":".$campanya."',
-									'0',
-									'0',
-									CURRENT_TIMESTAMP,
-									'".$pais_siglas."',
-									NULL,
-									'0',
-									'0',
-									'',
-									'".$user_agent."'
-								)";
+							$query = "INSERT INTO `".$tabla."` (
+										`id`,
+										`accion`,
+										`nombre`,
+										`apellidos`,
+										`apellido2`,
+										`dni`,
+										`poblacion`,
+										`provincia`,
+										`pais`,
+										`email`,
+										`telefono`,
+										`nif`,
+										`masinfo`,
+										`masinfoval`,
+										`rau`,
+										`rauval`,
+										`socio`,
+										`fecha`,
+										`accion2`,
+										`ip`,
+										`origen`,
+										`origen_piwik`,
+										`fax_enviado`,
+										`en_ev`,
+										`en_ev_firma`,
+										`pais_id`,
+										`provincia_id`,
+										`version_movil`,
+										`datos_firma_rapida`,
+										`mensaje`,
+										`user_agent`)
+									VALUES (
+											NULL,
+											'justiciapornavidad',
+											'".$nombre."',
+											'".$apellidos."',
+											'',
+											'',
+											'',
+											'',
+											'".$pais_nombre."',
+											'".$email."',
+											'".$telefono."',
+											'',
+											".$masinfo.",
+											'0',
+											'0',
+											'0',
+											".$socio.",
+											CURRENT_TIMESTAMP,
+											'',
+											'".$ip."',
+											'".$origen.":".$campanya."',
+											'".$origen.":".$campanya."',
+											'0',
+											'0',
+											CURRENT_TIMESTAMP,
+											'".$pais_siglas."',
+											NULL,
+											'0',
+											'0',
+											'',
+											'".$user_agent."'
+										)";
 
-  				$dummy = mysqli_query( $id_connect, $query ); //or die( "error!" );
-					mysqli_close($id_connect);
+		  				$dummy = mysqli_query( $id_connect, $query ); //or die( "error!" );
+							mysqli_close($id_connect);
 
+							// Conexión con la API
+
+							//$token = get_token();
+							$product_id = get_product_by_productcode("justiciapornavidad")[0]["id"];
+							$member_id = get_member_by_email($email)[0]["id"];
+
+							// si no existe el member, lo creamos internamente
+							if(!isset($member_id)){
+									$member = post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre);
+									$member_id = $member['id'];
+							}
+							// vemos si existe la purchase internamente
+							$purchase = get_purchase_by_member_product($product_id, $member_id);
+
+							// si no existe la purchase, la creamos en experian, junto con el member (crear o actualizar)
+							if($purchase["count"] == 0){
+									$purchase = post_purchase_ai($member_id, $product_id);
+									$purchase_id = $purchase["id"];
+									//post_member_purchase_experian($member_id, $purchase_id, $product_id, $nombre, $apellidos, $email, $telefono, $pais_siglas, $pais_nombre);
+							}
+							//else {
+								//$purchase_id = $purchase["results"][0]["id"];
+							//}
+
+					}
 					header("location: ../gracias.php?s=".$socio);
 
 			} catch(Exception $e) {
