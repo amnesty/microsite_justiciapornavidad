@@ -65,10 +65,10 @@ RewriteRule ^gallego/([^/]+)$ fase3/$1.php?ref_orig=gallego [QSA,L]
 # Add trailing slash
 RewriteCond %{REQUEST_URI} ^\/justicia\/ley-amnistia$
 RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
-RewriteRule ^gallego/$ fase3/index_ley-amnistia.php
-RewriteRule ^gallego/includes/enviar_form.php$ fase3/includes/enviar_form.php
-RewriteRule ^gallego/gracias.php$ fase3/gracias.php?ref_orig=ley-amnistia [QSA,L]
-RewriteRule ^gallego/([^/]+)$ fase3/$1.php?ref_orig=ley-amnistia [QSA,L]
+RewriteRule ^ley-amnistia/$ fase3/index_ley-amnistia.php
+RewriteRule ^ley-amnistia/includes/enviar_form.php$ fase3/includes/enviar_form.php
+RewriteRule ^ley-amnistia/gracias.php$ fase3/gracias.php?ref_orig=ley-amnistia [QSA,L]
+RewriteRule ^ley-amnistia/([^/]+)$ fase3/$1.php?ref_orig=ley-amnistia [QSA,L]
 
 # END CASO LEY AMNISTIA
 
