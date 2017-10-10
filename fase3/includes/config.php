@@ -68,5 +68,6 @@ if(isset($_GET['utm_campaign'])) {
 define ("TRACK_FB_UTM_TORRES", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-torres");
 define ("TRACK_FB_UTM_ADANTI", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-adanti");
 define ("TRACK_FB_UTM_GALLEGO", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-gallego");
+define ("TRACK_FB_UTM_AMNISTIA", "?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook-amnistia");
 
 ?>
