@@ -6,7 +6,7 @@
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 	<title>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</title>
-    <meta name="description" content="Te contamos el secreto de familia que no quieren que sepas.">
+    <meta name="description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación.">
 	<link rel="canonical" href="<?php echo URL_SITE; ?>ley-amnistia/" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
     <link rel="icon" href="<?php echo URL_SITE; ?>fase3/favicon.ico?v=3" type="image/x-icon" />
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
-    <meta property="og:description" content="Te contamos el secreto de familia que no quieren que sepas." />
+    <meta property="og:description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." />
     <meta property="og:site_name" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
     <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -28,7 +28,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
-    <meta name="twitter:description" content="Te contamos el secreto de familia que no quieren que sepas." />
+    <meta name="twitter:description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
@@ -104,11 +104,13 @@
 
                 <div class="text col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <h2>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</h2>
-                    <p>&nbsp; </p>
-                    <p>Hoy hemos salido a la calle para recordar que <b>se cumplen 40 años de la aprobación de la Ley de Amnistía</b>, una ley que se utiliza para proteger a personas responsables de haber cometido graves violaciones de derechos humanos durante la guerra civil y el franquismo.</p>
+                    <div class="box-text">
+		            <p>&nbsp; </p>
+		            <p>Hoy hemos salido a la calle para recordar que <b>se cumplen 40 años de la aprobación de la Ley de Amnistía</b>, una ley que se utiliza para proteger a personas responsables de haber cometido graves violaciones de derechos humanos durante la guerra civil y el franquismo.</p>
 
-                    <p>Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación. Porque una injusticia de ayer, es una injusticia hoy. <b>Firma para que lo consigan.</b></p>
-                    <p>&nbsp; </p>
+		            <p>Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación. Porque una injusticia de ayer, es una injusticia hoy. <b>Firma para que lo consigan.</b></p>
+		            <p>&nbsp; </p>
+	            </div>
 
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
@@ -127,13 +129,13 @@
 
         <div class="rrss" style="display:none;">
             <ul class="clearfix">
-                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" data-texto="Te contamos el secreto de familia que no quieren que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
-                <li><a data-shareurl="<?php echo urlencode('https://goo.gl/yo5g9J') ; ?>" data-texto="Lo de la familia de @carnecrudaradio me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
+                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" data-texto="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                <li><a data-shareurl="<?php echo urlencode('http://amn.st/60058A6wl') ; ?>" data-texto="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
 <?php
     if($isMobile) {
 
 ?>
-                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Lo de la familia de Javier Gallego me ha sorprendido #DiaDeLaFamilia https://goo.gl/svQ9jb')?>"></a></li>
+                <li><a class="fa fa-whatsapp hvr-shrink" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey http://amn.st/60078A6w7')?>"></a></li>
 <?php
 }
 ?>
@@ -160,9 +162,9 @@
 
                     <div class="box-text">
                         <h3>Felisa Echegoyen, la historia de una mujer torturada.</h3>
-                        <a href="felisa-echegoyen" class="btn-historias">Conoce la historia de Felisa</a>
+                        <a href="../felisa-echegoyen" class="btn-historias">Conoce la historia de Felisa</a>
                     </div>
-                    <a href="felisa-echegoyen" class="capa"></a>
+                    <a href="../felisa-echegoyen" class="capa"></a>
                 </div>
 
 
@@ -170,18 +172,18 @@
 
                     <div class="box-text">
                         <h3>Flor Díaz, la historia de un bebé robado.</h3>
-                        <a href="flor-diaz" class="btn-historias">Conoce la historia de Flor</a>
+                        <a href="../flor-diaz" class="btn-historias">Conoce la historia de Flor</a>
                     </div>
-                    <a href="flor-diaz" class="capa"></a>
+                    <a href="../flor-diaz" class="capa"></a>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 historias" style="background: url('../images/caso-antonio.jpg');">
 
                     <div class="box-text">
                         <h3>Antonio Narváez, sus padres están en una fosa común.</h3>
-                        <a href="antonio-narvaez" class="btn-historias">Conoce la historia de Antonio</a>
+                        <a href="../antonio-narvaez" class="btn-historias">Conoce la historia de Antonio</a>
                     </div>
-                    <a href="antonio-narvaez" class="capa"></a>
+                    <a href="../antonio-narvaez" class="capa"></a>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 sms-bg">
@@ -201,7 +203,7 @@
                         <div class="col-12">
                             <div class="box-text">
                                 <h3>Pedimos que volviera la <br/><span class="gotham">#</span>JusticiaPorNavidad</h3>
-                                <a href="seguimos-pidiendo-justicia" class="btn-ver-video" title="Ver campaña">Ver campaña</a>
+                                <a href="../seguimos-pidiendo-justicia" class="btn-ver-video" title="Ver campaña">Ver campaña</a>
                             </div>
                         </div>
                     </div>
