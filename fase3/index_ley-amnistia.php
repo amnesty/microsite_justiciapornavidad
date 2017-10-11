@@ -104,10 +104,10 @@
 
                 <div class="text col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <h2>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</h2>
+                    <p>&nbsp; </p>
                     <p>Hoy hemos salido a la calle para recordar que <b>se cumplen 40 años de la aprobación de la Ley de Amnistía</b>, una ley que se utiliza para proteger a personas responsables de haber cometido graves violaciones de derechos humanos durante la guerra civil y el franquismo.</p>
 
                     <p>Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación. Porque una injusticia de ayer, es una injusticia hoy. <b>Firma para que lo consigan.</b></p>
-                    <p>&nbsp; </p>
                     <p>&nbsp; </p>
 
                 </div>
