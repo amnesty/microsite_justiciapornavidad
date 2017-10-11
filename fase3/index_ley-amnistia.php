@@ -101,13 +101,6 @@
 
 		<div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <div class="youtubevideowrap">
-                        <div class="video-container">
-                            <iframe width="580" height="320" src="//www.youtube.com/embed/LsLfGhBSM9o" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="text col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <h2>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</h2>
@@ -116,6 +109,16 @@
                     <p>Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación. Porque una injusticia de ayer, es una injusticia hoy. <b>Firma para que lo consigan.</b></p>
 
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="youtubevideowrap">
+                        <div class="video-container">
+                            <iframe width="580" height="320" src="//www.youtube.com/embed/LsLfGhBSM9o" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
         </div><!-- /container -->
