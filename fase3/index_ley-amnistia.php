@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-	<title>Javier Gallego al descubierto</title>
+	<title>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</title>
     <meta name="description" content="Te contamos el secreto de familia que no quieren que sepas.">
 	<link rel="canonical" href="<?php echo URL_SITE; ?>ley-amnistia/" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
@@ -16,7 +16,7 @@
     <meta property="og:url" content="<?php echo URL_SITE; ?>ley-amnistia/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:title" content="Javier Gallego al descubierto" />
+    <meta property="og:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
     <meta property="og:description" content="Te contamos el secreto de familia que no quieren que sepas." />
     <meta property="og:site_name" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
     <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" />
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
-    <meta name="twitter:title" content="Javier Gallego al descubierto" />
+    <meta name="twitter:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
     <meta name="twitter:description" content="Te contamos el secreto de familia que no quieren que sepas." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
     <meta name="twitter:image:width" content="1024" />
@@ -106,14 +106,11 @@
                 </div>
 
                 <div class="text col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                    <h2>SIGUE LEYENDO PARA ENCONTRAR LO QUE ESTÁS BUSCANDO.</h2>
-                    <p>Hoy es el Día de la Familia y no queremos hablar de la familia de <b>Javier Gallego</b>, sino de algo que afecta a miles de <b>familias en toda España</b>.</p>
+                    <h2>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</h2>
+                    <p>Hoy hemos salido a la calle para recordar que <b>se cumplen 40 años de la aprobación de la Ley de Amnistía</b>, una ley que se utiliza para proteger a personas responsables de haber cometido graves violaciones de derechos humanos durante la guerra civil y el franquismo.</p>
 
-                    <p>Familias que también hoy recordarán a sus seres queridos, aquellos que desaparecieron durante la guerra civil y el franquismo y por quienes aún exigen justicia.</p>
+                    <p>Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación. Porque una injusticia de ayer, es una injusticia hoy. <b>Firma para que lo consigan.</b></p>
 
-                    <p>Desaparecidos en fosas comunes, víctimas del robo de bebés, personas detenidas injustamente que fueron torturadas por sus ideas. Todas ellas te necesitan para encontrar la justicia que están buscando.</p>
-
-                    <p><b>Ayúdales con tu firma a encontrarla.</b></p>
                 </div>
             </div>
 
@@ -121,7 +118,7 @@
 
         <div class="rrss" style="display:none;">
             <ul class="clearfix">
-                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="Javier Gallego al descubierto" data-texto="Te contamos el secreto de familia que no quieren que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="Javier Gallego al descubierto" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" data-texto="Te contamos el secreto de familia que no quieren que sepas." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
                 <li><a data-shareurl="<?php echo urlencode('https://goo.gl/yo5g9J') ; ?>" data-texto="Lo de la familia de @carnecrudaradio me ha sorprendido #DiaDeLaFamilia" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
 <?php
     if($isMobile) {
