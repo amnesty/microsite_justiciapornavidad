@@ -8,7 +8,7 @@
 	<title>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</title>
     <meta name="description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación.">
 	<link rel="canonical" href="<?php echo URL_SITE; ?>ley-amnistia/" />
-    <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
+    <link rel="image_src" href="<?php echo URL_SITE; ?>fase3/images/compartir-tw-amnistia.jpg" />
     <link rel="icon" href="<?php echo URL_SITE; ?>fase3/favicon.ico?v=3" type="image/x-icon" />
     <meta name="pinterest-rich-pin" content="false" />
     <meta name="pinterest" content="nopin" />
@@ -19,7 +19,7 @@
     <meta property="og:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
     <meta property="og:description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." />
     <meta property="og:site_name" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
-    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" />
+    <meta property="og:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-fb-amnistia.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <!--Twitter Cardas-->
@@ -29,7 +29,7 @@
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" />
     <meta name="twitter:description" content="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." />
-    <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-gallego.jpg" />
+    <meta name="twitter:image" content="<?php echo URL_SITE; ?>fase3/images/compartir-tw-amnistia.jpg" />
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
     <meta name="twitter:image:alt" content="Seguimos pidiendo Justicia – Amnistía Internacional" />
@@ -130,7 +130,7 @@
 
         <div class="rrss" style="display:none;">
             <ul class="clearfix">
-                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" data-texto="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-gallego-v2.jpg" data-caption="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
+                <li><a data-shareurl="<?php echo URL_SITE . 'ley-amnistia/' . TRACK_FB_UTM_AMNISTIA; ?>" data-title="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" data-texto="Miles de víctimas de la guerra civil y el franquismo siguen pidiendo verdad, justicia y reparación." data-imagen="<?php echo URL_SITE; ?>fase3/images/compartir-fb-amnistia.jpg" data-caption="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-facebook-official hvr-shrink facebook-share" href="#" title="Compartir en Facebook"></a></li>
                 <li><a data-shareurl="<?php echo urlencode('http://amn.st/60058A6wl') ; ?>" data-texto="40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey" class="fa fa-twitter hvr-shrink twitter-share" title="Compartir en  Twitter" href="#"></a></li>
 <?php
     if($isMobile) {
