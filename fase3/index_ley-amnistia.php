@@ -96,7 +96,7 @@
 
 
 
-	<section class="modulo-home clearfix">
+	<section class="modulo-interior clearfix">
 
 
 		<div class="container">
