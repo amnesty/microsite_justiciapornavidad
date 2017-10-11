@@ -101,11 +101,15 @@
 
 		<div class="container">
             <div class="row">
-                <div class="image-dest col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <img src="<?php echo URL_SITE; ?>fase3/images/foto.png" alt=""/>
+                <div class="image-dest col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="youtubevideowrap">
+                        <div class="video-container">
+                            <iframe width="580" height="320" src="//www.youtube.com/embed/LsLfGhBSM9o" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="text col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="text col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h2>40 años de la aprobación de la Ley de Amnistía: #EstaNoEsMiLey</h2>
                     <p>Hoy hemos salido a la calle para recordar que <b>se cumplen 40 años de la aprobación de la Ley de Amnistía</b>, una ley que se utiliza para proteger a personas responsables de haber cometido graves violaciones de derechos humanos durante la guerra civil y el franquismo.</p>
 
