@@ -117,7 +117,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="youtubevideowrap">
                         <div class="video-container">
-                            <iframe width="580" height="320" src="//www.youtube.com/embed/LsLfGhBSM9o" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="580" height="320" src="//www.youtube.com/embed/rNufIC9b8Wk" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
